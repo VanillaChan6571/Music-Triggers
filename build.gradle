@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.2.+'
+	id 'fabric-loom' version '1.6.11'
 	id 'com.github.johnrengelman.shadow' version '8.1.+'
 }
 
@@ -62,7 +62,8 @@ dependencies {
 	}
 
 	//mods
-	modImplementation "maven.modrinth:the-impossible-library:${project.minecraft_version}-fabric-${project.lib_version}"
+	//modImplementation "maven.modrinth:the-impossible-library:${project.minecraft_version}-fabric-${project.lib_version}" // OLD
+	modImplementation "maven.modrinth:the-impossible-library:0.4.0-universal"
 }
 
 shadowJar {
